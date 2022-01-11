@@ -1,0 +1,41 @@
+html, body, div {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@keyframes colorChange {
+  from {
+    color: white;
+  }
+
+  to {
+    color: black;
+  }
+}
+
+#text {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  animation: 3s linear 1s infinite alternate colorChange;
+}

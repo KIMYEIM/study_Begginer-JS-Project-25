@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 530px;
+}
+
+#image-box {
+  width: 530px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#carousel {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 15px;
+  transform: translateX(-515px)
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 999;
+}
+
+#left {
+  top: 50%;
+  left: 0;
+}
+
+#right {
+  top: 50%;
+  right: 0;
+}
+
+#pagination {
+  height: 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.page {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.page.selected {
+  background-color: rgba(0, 0, 0, .7);
+}
